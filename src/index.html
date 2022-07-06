@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body>
+<main class="flex">
+   <!-- side bar --> 
+   <section class="mr-10">
+       <header class="flex flex-col shadow items-center p-10 cursor-pointer justify-center w-[100px] lg:w-[300px] lg:items-start lg:justify-start">
+           <div class="w-[50px] h-[50px]  rounded-full flex items-center justify-center transition-all duration-75 ease-in-out  cursor-pointer hover:bg-blue-200 " >
+            <img src="https://logos-download.com/wp-content/uploads/2016/02/Twitter_Logo_new.png" alt="logo" class="w-[30px]">
+           </div>
+            <!-- icons -->
+           <section class="lg:flex flex-col items-start justify-start">
+            <div class="menu">
+              <div class="mr-5">
+                    <i class=" fa-solid fa-home text-2xl"></i>
+                <div class="text-blue-600 text-3xl -mt-[1.5em] ml-[.8em]">
+                    &#8226;
+                </div>
+              </div>
+                <p class="capitalize font-bold ml-2 hidden lg:inline-flex">home</p>
+            </div>
+            <div class="menu">
+                <i class=" mr-8 fa-solid fa-magnifying-glass text-2xl lg:hidden"></i>
+                <i class=" mr-8 fa-solid fa-hashtag hidden text-2xl lg:inline-flex"></i>
+                <p class="capitalize font-bold ml-2 hidden lg:inline-flex">explore</p>
+            </div>
+            <div class="menu">
+                <i class=" mr-8 fa-solid fa-bell text-2xl"></i>
+                
+                <p class="capitalize font-bold ml-2 hidden lg:inline-flex">notifications</p>
+            </div>
+            <div class="menu">
+                <i class=" mr-8 fa-solid fa-envelope text-2xl"></i>
+                
+                <p class="capitalize font-bold ml-2 hidden lg:inline-flex">messages</p>
+            </div> 
+              <div class="menu ">
+                <i class=" mr-8 fa-solid fa-bookmark text-2xl "></i>
+                
+                <p class="capitalize font-bold ml-2 hidden lg:inline-flex">bookmarks</p>
+            </div>
+               <div class="menu">
+                <i class=" mr-8 fa-solid fa-list text-2xl"></i>
+                
+                <p class="capitalize font-bold ml-2 hidden lg:inline-flex">lists</p>
+            </div>
+               <div class="menu">
+                <i class=" mr-8 fa-solid fa-user text-2xl"></i>
+                
+                <p class="capitalize font-bold ml-2 hidden lg:inline-flex">profile</p>
+            </div>
+            <div class="menu">
+                <i class=" mr-8 fa-solid fa-ellipsis text-2xl"></i>
+                
+                <p class="capitalize font-bold ml-2 hidden lg:inline-flex">more</p>
+            </div>
+         
+
+            <!-- fresh -->
+            <div class="menu hover:bg-transparent">
+                <div class="w-[60px] h-[60px] bg-blue-500 rounded-full text-white flex items-center justify-center -ml-5 lg:hidden ">
+                <i class="ml-7 fa-solid fa-plus -mt-[.1em]"></i>
+                <i class=" mr-8 fa-solid fa-feather-pointed text-2xl "></i>
+                </div>
+                <p class="capitalize  bg-blue-500 rounded-full px-20 py-4 cursor-pointer text-white font-bold ml-2 hidden lg:inline-flex">tweet</p>
+            </div>
+            <div class="my-7 menu">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkNwDAofM2xlMZh5j1gh8TaHtcUtOhjOgFTQ&usqp=CAU" class="h-[60px] w-[60px] object-cover rounded-full " alt="">
+                <p class="capitalize font-bold ml-2 hidden lg:inline-flex">elon musk</p>
+
+         
+           </section>
+         
+       </header>
+   </section>
+   <!-- news feed -->
+   <section class="p-4 w-full">
+       <header class="flex items-center justify-between">
+       <div>
+              <h2 class="font-bold capitalize text-xl">home</h2>
+       </div>
+           <div class="hover:bg-gray-200 w-[50px] h-[50px] rounded-full flex items-center justify-center ">
+               <i class="fa-solid fa-star text-xs font-thin relative -top-2"></i>
+
+               <i class="fa-solid fa-star font-thin text-lg"></i>
+           </div>
+       </header>
+       <section>
+           <div class="flex items-center space-x-8 ">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkNwDAofM2xlMZh5j1gh8TaHtcUtOhjOgFTQ&usqp=CAU" class="h-[60px] w-[60px] object-cover rounded-full " alt="">
+            <input type="text" class="p-4 border-none outline-none w-full" placeholder="what's happening">
+           </div>
+           <aside class="flex my-4 ml-10 items-center justify-center space-x-2  rounded-full font-semibold text-blue-400 w-[200px]  hover:bg-blue-100">
+            <i class="fa-solid fa-earth-africa"></i>
+            <p>everyone can reply</p>
+
+           </aside>
+           <hr class="ml-10">
+           <div class="flex items-center justify-between p-4 ml-10">
+               <div class="flex space-x-2 text-blue-400">
+                  <i class="fa-solid fa-image icon"></i>
+                  <i class="fa-solid fa-smile icon"></i>
+                  <i class="fa-solid fa-location-dot icon"></i>
+               </div>
+               <button class="bg-blue-400 text-white rounded-full py-1 px-6 cursor-pointer">tweet</button>
+           </div>
+       </section>
+       <!--news feed card-->
+       <section class="flex p-3 border w-[400px]">
+           <div class="mr-6">
+               <img class="w-[70px] h-[40px] object-cover rounded-full " src="https://www.aljazeera.com/wp-content/uploads/2022/05/putin.jpg?resize=1200%2C630" alt="">
+           </div>
+           <div>
+               <div class="flex items-center justify-between">
+                   <aside class="flex space-x-1">
+                   <h2 class="font-bold capitalize text-lg">reuters</h2>
+                   <i class="fa-solid fa-circle-check flex items-center text-blue-500"></i>
+                   <h2 class="text-gray-500">@Reuters &#8226;</h2>
+                   <p>4pm</p>
+                   </aside>
+                   <i class="fa-solid fa-ellipsis text-gray-500"></i>
+                </div>
+               <h2>Russia touts new generation of 'blindind' laser weapons <span class="text-blue-500 hover:underline">reut.rs/3wnxDxg</span></h2>
+               <p></p>
+               <img class="rounded-lg" src="https://www.aljazeera.com/wp-content/uploads/2022/05/putin.jpg?resize=1200%2C630" alt="">
+               <div>
+                   <i></i>
+               </div>
+           </div>
+       </section>
+   </section>
+
+   <!--aside side-->
+   <section></section>
+
+</main>
+</body>
+</html>
